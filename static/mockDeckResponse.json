@@ -1,0 +1,71 @@
+{
+  "status": "success",
+  "httpStatus": 200,
+  "message": "Scale fetched successfully",
+  "data": [
+    {
+      "octave": 4,
+      "noteName": "C",
+      "modifier": 0,
+      "midiValue": 60,
+      "transposition": 0,
+      "transposedNote": null
+    },
+    {
+      "octave": 4,
+      "noteName": "D",
+      "modifier": 0,
+      "midiValue": 62,
+      "transposition": 0,
+      "transposedNote": null
+    },
+    {
+      "octave": 4,
+      "noteName": "E",
+      "modifier": 0,
+      "midiValue": 64,
+      "transposition": 0,
+      "transposedNote": null
+    },
+    {
+      "octave": 4,
+      "noteName": "F",
+      "modifier": 0,
+      "midiValue": 65,
+      "transposition": 0,
+      "transposedNote": null
+    },
+    {
+      "octave": 4,
+      "noteName": "G",
+      "modifier": 0,
+      "midiValue": 67,
+      "transposition": 0,
+      "transposedNote": null
+    },
+    {
+      "octave": 4,
+      "noteName": "A",
+      "modifier": 0,
+      "midiValue": 69,
+      "transposition": 0,
+      "transposedNote": null
+    },
+    {
+      "octave": 4,
+      "noteName": "B",
+      "modifier": 0,
+      "midiValue": 71,
+      "transposition": 0,
+      "transposedNote": null
+    },
+    {
+      "octave": 5,
+      "noteName": "C",
+      "modifier": 0,
+      "midiValue": 72,
+      "transposition": 0,
+      "transposedNote": null
+    }
+  ]
+}
