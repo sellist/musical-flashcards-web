@@ -7,11 +7,12 @@ import Contact from "./routes/Contact.jsx";
 import About from "./routes/About.jsx";
 
 const router = createBrowserRouter(
-{
+[
+    {
         path: '/',
         element: <App/>,
     },
-{
+    {
         path: '/contact',
         element: Contact,
     },
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
         path: '/deck/',
         element: <h1>Deck</h1>,
     }
+]
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(
