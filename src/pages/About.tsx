@@ -1,5 +1,7 @@
+import DisplayText from "../components/DisplayText.tsx";
+
 export default function About() {
     return (
-        <h1>About</h1>
+        <DisplayText text={"About"} />
     )
 }
