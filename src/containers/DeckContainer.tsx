@@ -1,6 +1,16 @@
+
+import CSS from "csstype";
+
+const styles: CSS.Properties = {
+
+}
+
 export default function DeckContainer() {
     return (
-        <h1>DeckContainer</h1>
-    //     hold the state of the deck and create playable deck
+        <div style={styles}>
+            <h1>DeckContainer</h1>
+        </div>
+
+        //     hold the state of the deck and create playable deck
     )
 }

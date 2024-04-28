@@ -1,10 +1,10 @@
-import NavigationContainer from "../../containers/NavigationContainer.tsx";
+import NavbarVisiblePage from "../../containers/NavbarVisiblePage.tsx";
+import DisplayText from "../../components/DisplayText.tsx";
 
 export default function Home() {
     return (
-        <div>
-            <NavigationContainer />
-            <h1>Home</h1>
-        </div>
+        <NavbarVisiblePage>
+            <DisplayText text={"Home"} />
+        </NavbarVisiblePage>
     )
 }

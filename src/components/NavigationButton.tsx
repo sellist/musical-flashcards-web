@@ -1,6 +1,17 @@
+import {Link} from "react-router-dom";
+import {Button, } from "@mui/material";
+import CSS from "csstype";
 
-export default function NavigationButton({text, onClick}: Readonly<{ text: string, onClick: () => void }>) {
+const buttonStyle: CSS.Properties = {
+    backgroundColor: "var(--button-background-color)",
+    height: "100%"
+}
+
+export default function NavigationButton({text, path}:
+    Readonly<{ text: string, path: string }>) {
     return (
-        <button onClick={onClick}>{text}</button>
+        <Link to={path}>
+            <Button style={buttonStyle}>{text}</Button>
+        </Link>
     )
 }

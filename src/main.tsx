@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
+import './variables.css'
 import {DevSupport} from "@react-buddy/ide-toolbox";
 import {ComponentPreviews} from "./dev";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -22,8 +23,7 @@ export const App: React.FC = () => (
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
-        <DevSupport ComponentPreviews={ComponentPreviews}
-        >
+        <DevSupport ComponentPreviews={ComponentPreviews}>
             <App/>
         </DevSupport>
     </React.StrictMode>,

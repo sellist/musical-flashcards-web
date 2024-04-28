@@ -1,11 +1,10 @@
 import DisplayText from "../../components/DisplayText.tsx";
-import NavigationContainer from "../../containers/NavigationContainer.tsx";
+import NavbarVisiblePage from "../../containers/NavbarVisiblePage.tsx";
 
 export default function About() {
     return (
-        <div>
-            <NavigationContainer />
+        <NavbarVisiblePage>
             <DisplayText text={"About"} />
-        </div>
+        </NavbarVisiblePage>
     )
 }

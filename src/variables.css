@@ -1,0 +1,15 @@
+:root {
+    --color-background: rgba(243, 243, 243, 0.95);
+    --nav-bar-background: rgba(187, 187, 187, 0.95);
+    --disabled-button: rgba(199, 199, 199, 0.1);
+    --button-background-color: rgba(31, 31, 45, 0.97);
+    --nav-bar-height: 3vh;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-background: rgba(33, 33, 33, 0.95);
+        --nav-bar-background: rgba(77, 77, 77, 0.95);
+        --disabled-button: rgba(77, 77, 77, 0.1);
+    }
+}
