@@ -9,6 +9,7 @@ export default function NavBar() {
                 <NavigationButton text="Create Deck" path="/create" />
                 <NavigationButton text="About" path="/about" />
                 <NavigationButton text="Contact" path="/contact" />
+                <NavigationButton text="Play" path="/deck" />
             </div>
         </nav>
 

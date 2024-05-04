@@ -9,6 +9,7 @@ import About from "./pages/about/About.tsx";
 import CreateDeck from "./pages/createDeck/CreateDeck.tsx";
 import Contact from "./pages/contact/Contact.tsx";
 import Home from "./pages/Home/Home.tsx";
+import PlayDeck from "./pages/playDeck/PlayDeck.tsx";
 
 export const App: React.FC = () => (
     <BrowserRouter>
@@ -17,6 +18,7 @@ export const App: React.FC = () => (
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/create" element={<CreateDeck />} />
+            <Route path="/deck" element={<PlayDeck />} />
         </Routes>
     </BrowserRouter>
 );
