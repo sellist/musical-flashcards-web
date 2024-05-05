@@ -1,14 +1,14 @@
 import ScaleAPIServiceImpl from "./impl/ScaleAPIServiceImpl.tsx";
-import MockApiService from "./mock/MockApiService.tsx";
-import ScaleApi from "./interface/ScaleApiInterface.tsx";
+import MockScaleServiceImpl from "./mock/MockScaleServiceImpl.tsx";
+import ScaleApiInterface from "./interface/ScaleApiInterface.tsx";
 
 const environment: string = import.meta.env.VITE_NODE_ENV;
 
 class ScaleService {
-    impl: ScaleApi;
+    impl: ScaleApiInterface;
     constructor() {
-        if (environment == "DEV") {
-            this.impl = new MockApiService();
+        if (environment == "LOCAL") {
+            this.impl = new MockScaleServiceImpl();
         } else {
             this.impl = new ScaleAPIServiceImpl();
         }

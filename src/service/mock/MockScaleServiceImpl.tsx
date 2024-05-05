@@ -1,10 +1,10 @@
 import {ScaleRequest} from "../../models/RequestModels.tsx";
-import ScaleApi from "../interface/ScaleApiInterface.tsx";
+import ScaleApiInterface from "../interface/ScaleApiInterface.tsx";
 import axios from "axios";
 import ApiResponse from "../../models/ApiResponse.tsx";
 import {Note} from "../../models/Note.tsx";
 
-class MockApiService implements ScaleApi{
+class MockScaleServiceImpl implements ScaleApiInterface{
 
     async getScale(tonic: string, scaleType: string, octave: number): Promise<ApiResponse<Note[]>>{
 
@@ -20,4 +20,4 @@ class MockApiService implements ScaleApi{
     }
 }
 
-export default MockApiService;
+export default MockScaleServiceImpl;

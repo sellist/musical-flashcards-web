@@ -1,20 +1,12 @@
 import axios from "axios";
 import {ScaleRequest} from "../../models/RequestModels.tsx";
-import MockApiService from "../mock/MockApiService.tsx";
-import ScaleApi from "../interface/ScaleApiInterface.tsx";
+import ScaleApiInterface from "../interface/ScaleApiInterface.tsx";
 import ApiResponse from "../../models/ApiResponse.tsx";
 import {Note} from "../../models/Note.tsx";
 
-const environment: string = import.meta.env.VITE_NODE_ENV;
-const BASE_URL: string = "http://localhost:8080";
+const BASE_URL: string = import.meta.env.VITE_BASE_URL;
 
-class ScaleAPIServiceImpl implements ScaleApi {
-
-    constructor() {
-        if (environment == "DEV") {
-            return new MockApiService();
-        }
-    }
+class ScaleAPIServiceImpl implements ScaleApiInterface {
 
     async getScale(tonic: string, scaleType: string, octave: number): Promise<ApiResponse<Note[]>> {
 
