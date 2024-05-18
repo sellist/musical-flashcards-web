@@ -1,7 +1,7 @@
 import {ABSJsDisplay} from "./ABSJsDisplay.tsx";
 import {Note} from "./Note.tsx";
 
-export type Card = {
+export type CardObject = {
     front: ABSJsDisplay;
     back: Note;
 }

@@ -20,13 +20,13 @@ export const PaletteTree = () => (
         <AntdPalette/>
         <ReactIntlPalette/>
         <Category name="App templates">
-            <Component name="Card">
+            <Component name="CardObject">
                 <Variant name="Loading">
-                    <Card title="Card title">
+                    <CardObject title="CardObject title">
                         <Skeleton loading={true} avatar active>
-                            Card content
+                            CardObject content
                         </Skeleton>
-                    </Card>
+                    </CardObject>
                 </Variant>
             </Component>
             <Component name="Form">

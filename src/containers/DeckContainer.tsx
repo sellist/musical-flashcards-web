@@ -1,36 +1,29 @@
-import CSS from "csstype";
 import {useEffect, useState} from "react";
-import {Note} from "../models/Note.tsx";
-import ScaleService from "../service/ScaleService.tsx";
-
-const styles: CSS.Properties = {
-
-}
-
+import CardService from "../service/CardService.tsx";
+import {CardObject} from "../models/CardObject.tsx";
+import PageContentContainer from "./PageContentContainer.tsx";
+import Deck from "../components/Deck.tsx";
 
 export default function DeckContainer() {
-    const [scale, setScale] = useState<Note[]>([]);
+    const [cards, setCards] = useState<CardObject[]>([]);
 
     useEffect(() => {
+
         const getScale = () => {
-            const service = new ScaleService();
-            service.impl.getScale('C', 'major', 4).then(response => setScale(response.data));
+            const cardService = new CardService();
+
+            cardService.impl.getCardsFromNoteNames(['C4', 'D4', 'E4', 'F4', 'G4', 'A4', 'B4']).then(response => setCards(response.data));
         }
+
+
+
 
         getScale();
     }, []);
 
     return (
-        <div style={styles}>
-            <h1>DeckContainer</h1>
-            <div>
-                {scale.map(note =>
-                    <div key={note.noteName + note.octave}>
-                        {note.noteName}
-                        {note.octave}
-                    </div>
-                )}
-            </div>
-        </div>
+        <PageContentContainer>
+            <Deck cards={cards} />
+        </PageContentContainer>
     )
 }

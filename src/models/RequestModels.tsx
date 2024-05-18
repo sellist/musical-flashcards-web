@@ -1,3 +1,5 @@
+import {Note} from "./Note.tsx";
+
 export interface NotesByNameRequest {
     notes: string[];
 }
@@ -14,4 +16,8 @@ export interface InstrumentsByFamilyRequest {
 
 export interface AdjustedNoteRequest {
 
+}
+
+export type CardRequest = {
+    notes: Note[];
 }
