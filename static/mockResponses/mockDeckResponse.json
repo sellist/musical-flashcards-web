@@ -1,6 +1,6 @@
 {
   "status": "success",
-  "httpStatus": 200,
+  "code": 200,
   "message": "Scale fetched successfully",
   "data": [
     {

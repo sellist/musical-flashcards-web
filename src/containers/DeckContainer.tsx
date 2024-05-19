@@ -14,10 +14,6 @@ export default function DeckContainer() {
 
             cardService.impl.getCardsFromNoteNames(['C4', 'D4', 'E4', 'F4', 'G4', 'A4', 'B4']).then(response => setCards(response.data));
         }
-
-
-
-
         getScale();
     }, []);
 

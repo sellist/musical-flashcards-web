@@ -11,7 +11,7 @@ class MockCardServiceImpl implements CardAPIInterface {
             notes: notes
         }
 
-        console.log("notes request body: ", request);
+        console.log("cards request body: ", request);
 
         return await axios.get('/static/mockResponses/mockCardResponse.json').then(response => response.data);
     }

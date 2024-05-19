@@ -24,6 +24,7 @@ export const App: React.FC = () => (
 );
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
+    // react strictmode does double rendering, remove for production
     <React.StrictMode>
         <DevSupport ComponentPreviews={ComponentPreviews}>
             <App/>
