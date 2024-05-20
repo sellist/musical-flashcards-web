@@ -4,10 +4,10 @@ import React from "react";
 import CSS from "csstype";
 
 const innerStyle : CSS.Properties = {
-    // display: "flex",
-    // flexDirection: "row",
-    // height: "100%",
-    // width: "100%",
+    display: "grid",
+    placeItems: "center",
+    height: "95%",
+    width: "98%",
 }
 
 

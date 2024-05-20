@@ -1,0 +1,23 @@
+.card {
+    min-height: 100%;
+    min-width: 100%;
+    max-height: 80vh;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.front {
+    max-width: inherit;
+    overflow: hidden;
+    transform: scale(0.5);
+}
+
+.back {
+    display: grid;
+    max-width: inherit;
+    max-height: 80vh;
+    position: fixed;
+    overflow: visible;
+
+}
