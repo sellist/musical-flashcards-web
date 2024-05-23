@@ -18,6 +18,13 @@ export interface AdjustedNoteRequest {
 
 }
 
-export type CardRequest = {
+export type CardsByNoteRequest = {
     notes: Note[];
+}
+
+export type CardsByCriteriaRequest = {
+    startingNote: string;
+    scaleType: string;
+    octaves: number;
+    instrument: string;
 }
