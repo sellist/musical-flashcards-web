@@ -4,7 +4,8 @@ import CSS from "csstype";
 
 const buttonStyle: CSS.Properties = {
     backgroundColor: "var(--button-background-color)",
-    height: "100%"
+    height: "100%",
+    margin: "0",
 }
 
 export default function NavigationButton({text, path}:

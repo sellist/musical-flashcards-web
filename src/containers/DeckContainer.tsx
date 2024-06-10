@@ -18,7 +18,7 @@ export default function DeckContainer() {
     }, []);
 
     return (
-        <PageContentContainer >
+        <PageContentContainer>
             <Deck cards={cards} />
         </PageContentContainer>
     )

@@ -9,10 +9,12 @@ const deckDisplay: CSS.Properties = {
     alignItems: "center",
     height: "100%",
     width: "100%",
+    margin: "0",
 }
 
 const buttonStyle: CSS.Properties = {
     display: "flex",
+    margin: "0",
     justifyContent: "center",
     alignItems: "center",
     height: "20%",

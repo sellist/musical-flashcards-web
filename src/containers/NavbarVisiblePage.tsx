@@ -10,30 +10,16 @@ const pageStyles : CSS.Properties = {
     width: "100%",
     maxHeight: "100vh",
     minHeight: "100vh",
-}
-
-const navStyles: CSS.Properties = {
-    marginTop: "0"
-}
-
-const containerStyles : CSS.Properties = {
-    display: "flex",
-    flexDirection: "column",
-    height: "calc(100vh - var(--nav-bar-height))",
-    justifyContent: "center",
+    margin: "0",
 }
 
 export default function NavbarVisiblePage({children}: Readonly<{children: React.ReactNode}>) {
     return (
         <div style={pageStyles}>
-            <div style={navStyles}>
-                <NavBar />
-            </div>
-            <div style={containerStyles}>
-                <PageContentContainer>
-                    {children}
-                </PageContentContainer>
-            </div>
+            <NavBar />
+            <PageContentContainer >
+                {children}
+            </PageContentContainer>
         </div>
     )
 }

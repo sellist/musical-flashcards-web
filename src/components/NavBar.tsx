@@ -28,10 +28,7 @@ const navStyles: CSS.Properties = {
     paddingTop: "1vh",
     paddingBottom: "1vh",
     paddingLeft: "1vw",
-    margin: "0px",
-    marginRight: "0.5vw",
-    marginLeft: "0.5vw",
-    marginTop: "0.25vh",
+    margin: "0.5%",
     borderRadius: "5px",
     boxShadow: "0 0 5px 0 rgba(0,0,0,0.2)",
 }

@@ -1,19 +1,11 @@
 import {Container} from "@mui/material";
 
-import React from "react";
+import React, {ReactElement} from "react";
 import CSS from "csstype";
 
-const innerStyle : CSS.Properties = {
-    display: "grid",
-    placeItems: "center",
-    height: "95%",
-    width: "98%",
-}
-
-
-export default function PageContentContainer({children}: Readonly<{children: React.ReactNode}>) {
+export default function PageContentContainer({children, styles}: Readonly<{children: React.ReactNode, styles?: CSS.Properties}>) : ReactElement {
     return (
-            <Container style={innerStyle}>
+            <Container style={styles}>
                 {children}
             </Container>
     )
